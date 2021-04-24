@@ -67,7 +67,7 @@ def home_view(request):
         'chart': chart,
         'no_data': no_data
     }
-    return render(request, 'sales/home.html', context)
+    return render(request, 'sales/main.html', context)
 
 class SaleListView(ListView):
     model = Sale
